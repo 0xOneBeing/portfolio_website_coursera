@@ -1,0 +1,99 @@
+:root {
+  --bg-color: #0d0d39;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --primary-btn-bg: #e25822;
+  --secondary-btn-bg: transparent;
+}
+
+.primary-btn {
+  font-weight: bold;
+  background-color: var(--primary-btn-bg) !important;
+  border: 1px solid var(--primary-btn-bg) !important;
+}
+
+.secondary-btn {
+  font-weight: bold;
+  background-color: var(--secondary-btn-bg) !important;
+  color: var(--primary-btn-bg) !important;
+  border: 1px solid var(--primary-btn-bg) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondary-btn:hover {
+  color: var(--color-white) !important;
+  background-color: var(--primary-btn-bg) !important;
+  border: 1px solid var(--primary-btn-bg) !important;
+}
+
+@media (max-width: 768px) {
+  .primary-btn,
+  .secondary-btn {
+    font-size: 11px !important;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color-white) !important;
+  background-color: var(--bg-color) !important;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.portfolio-gallery a {
+  text-decoration: none !important;
+}
+
+.portfolio-gallery .card {
+  transition: transform 0.3s;
+}
+
+.portfolio-gallery .card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.navbar.fixed-top {
+  background-color: var(--bg-color) !important;
+  color: var(--color-white) !important;
+}
+
+.nav-link {
+  color: var(--color-white) !important;
+}
+
+.nav-item .nav-link {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.active {
+  color: var(--color-white) !important;
+  background-color: var(--primary-btn-bg) !important;
+}
+
+.contact-form {
+  width: 40vw;
+  margin: 0 auto !important;
+}
+
+.skills li {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid var(--color-white);
+  border-radius: 35px;
+}
+
+span.d-none.d-md-inline,
+.navbar-toggler {
+  color: var(--color-white) !important;
+}
+
+::placeholder {
+  color: #000 !important;
+  font-weight: bold;
+}
